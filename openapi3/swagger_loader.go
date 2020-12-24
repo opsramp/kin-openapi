@@ -388,6 +388,7 @@ func (swaggerLoader *SwaggerLoader) resolveHeaderRef(swagger *Swagger, component
 				return err
 			}
 			component.Value = resolved.Value
+			component.Ref = ""
 		}
 	}
 	value := component.Value
@@ -434,6 +435,7 @@ func (swaggerLoader *SwaggerLoader) resolveParameterRef(swagger *Swagger, compon
 				return err
 			}
 			component.Value = resolved.Value
+			component.Ref = ""
 		}
 	}
 	value := component.Value
@@ -496,6 +498,7 @@ func (swaggerLoader *SwaggerLoader) resolveRequestBodyRef(swagger *Swagger, comp
 				return err
 			}
 			component.Value = resolved.Value
+			component.Ref = ""
 		}
 	}
 	value := component.Value
@@ -552,6 +555,7 @@ func (swaggerLoader *SwaggerLoader) resolveResponseRef(swagger *Swagger, compone
 				return err
 			}
 			component.Value = resolved.Value
+			component.Ref = ""
 		}
 	}
 	refDocumentPath, err := referencedDocumentPath(documentPath, ref)
@@ -712,6 +716,7 @@ func (swaggerLoader *SwaggerLoader) resolveSecuritySchemeRef(swagger *Swagger, c
 				return err
 			}
 			component.Value = resolved.Value
+			component.Ref = ""
 		}
 	}
 	return nil
@@ -749,6 +754,7 @@ func (swaggerLoader *SwaggerLoader) resolveExampleRef(swagger *Swagger, componen
 				return err
 			}
 			component.Value = resolved.Value
+			component.Ref = ""
 		}
 	}
 	return nil
@@ -786,6 +792,7 @@ func (swaggerLoader *SwaggerLoader) resolveLinkRef(swagger *Swagger, component *
 				return err
 			}
 			component.Value = resolved.Value
+			component.Ref = ""
 		}
 	}
 	return nil
