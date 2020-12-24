@@ -626,6 +626,7 @@ func (swaggerLoader *SwaggerLoader) resolveSchemaRef(swagger *Swagger, component
 				return err
 			}
 			component.Value = resolved.Value
+			component.Ref = ""
 		}
 	}
 
