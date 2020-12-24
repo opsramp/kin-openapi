@@ -12,8 +12,8 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/getkin/kin-openapi/jsoninfo"
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/samschurter/kin-openapi/jsoninfo"
+	"github.com/samschurter/kin-openapi/openapi3"
 )
 
 type Swagger struct {

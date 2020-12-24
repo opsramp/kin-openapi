@@ -3,8 +3,8 @@ package openapi3
 import (
 	"fmt"
 
-	"github.com/getkin/kin-openapi/jsoninfo"
 	"github.com/go-openapi/jsonpointer"
+	"github.com/samschurter/kin-openapi/jsoninfo"
 )
 
 type Examples map[string]*ExampleRef

@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/getkin/kin-openapi/openapi2"
-	"github.com/getkin/kin-openapi/openapi3"
 	"github.com/ghodss/yaml"
+	"github.com/samschurter/kin-openapi/openapi2"
+	"github.com/samschurter/kin-openapi/openapi3"
 	"github.com/stretchr/testify/require"
 )
 
